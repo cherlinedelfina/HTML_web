@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Will you be my Valentine?</title>
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Will you be my Valentine?</header>
+      <form action="https://sheetdb.io/api/v1/ndh1y164y1vkw" method="post" class="form" action="#" id = "sheetdb-form">
+        <div class="input-box">
+          <label>What time will you get off from hospital on the Tuesday, 14th February 2023?</label>
+          <input type="text" name="data[hosp]" placeholder="Enter time" required />
+        </div>
+
+        <div class="gender-box">
+          <h3>What type of date do you prefer?</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="data[prefered_date]" value="fancy" checked />
+              <label for="check-male">fancy</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="data[prefered_date]" value="chill"/>
+              <label for="check-female">chill</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="data[prefered_date]" value="any"/>
+              <label for="check-other">any</label>
+            </div>
+          </div>
+        </div>
+
+          <button type="submit">Submit</button>
+      </form>
+
+      <script>
+        var form = document.getElementById('sheetdb-form');
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      fetch(form.action, {
+          method : "POST",
+          body: new FormData(document.getElementById("sheetdb-form")),
+      }).then(
+          response => response.json()
+      ).then((html) => {
+        window.open('http://127.0.0.1:3000/happy/happy.html');
+  
+      });
+    });
+    </script>
+    </section>
+    
+  </body>
+</html>
