@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open https://raw.githubusercontent.com/cherlinedelfina/HTML_web/main/sad/sad.html",
-            "file": "/Users/cher/Downloads/Login & Registration Form/index.html"
+            "file": "https://raw.githubusercontent.com/cherlinedelfina/HTML_web/main/sad/sad.html"
         }
     ]
 }
