@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open start.html",
-            "file": "https://raw.githubusercontent.com/cherlinedelfina/HTML_web/main/start/start.html"
+            "name": "Open index.html",
+            "file": "https://raw.githubusercontent.com/cherlinedelfina/HTML_web/main/start/index.html"
         }
     ]
 }
